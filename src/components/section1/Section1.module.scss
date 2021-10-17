@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  .text {
+    width: 80%;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: left;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-name: fadeInUp;
+    margin-bottom: 40px;
+    text-align: left !important;
+    h5 {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 700;
+      color: #1f2471;
+      line-height: 1.5em;
+      margin: auto;
+      font-size: 34px;
+      text-align: left;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  }
+  .grid__wrapper {
+    width: 95%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      font-family: "Poppins", sans-serif;
+      text-align: left;
+      position: relative;
+    }
+  }
+}

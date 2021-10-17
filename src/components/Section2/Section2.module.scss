@@ -1,0 +1,27 @@
+.container {
+  margin-bottom: -50px;
+  padding-top: 100px;
+  padding-bottom: 0;
+  .Wrapper {
+    width: 95%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    div {
+      margin-bottom: 40px;
+      text-align: center !important;
+      h6 {
+        font-family: "Source Sans Pro", sans-serif;
+        padding: 10px 30px;
+        display: inline-block;
+        border-radius: 10px;
+        font-size: 35px;
+        font-weight: 600;
+        color: #1f2471;
+        margin-bottom: 0.5rem;
+        background-color: rgba(31, 36, 113, 0.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.grid_item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 20px;
+  transition: all 1.5s;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  margin-bottom: 30px;
+  animation-name: fadeInUp;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 960px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media screen and (max-width: 600px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .grid {
+    padding: 30px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .iconWrapper {
+      background: #ff5269;
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      margin: 24px 0 45px;
+      position: relative;
+      z-index: 1;
+      border-radius: 100%;
+      box-shadow: rgba(255, 168, 8, 0.5) 0 2px 15px;
+      i {
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+    .text {
+      color: #1f2471;
+      h4 {
+        margin-bottom: 15px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        color: #1f2471;
+        // font-size: 1.5625rem;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+.grid_item:hover {
+  box-shadow: rgba(31, 66, 135, 0.1) 0 0px 10px 4px;
+
+  background-image: url("../../assets/images/pattern5.png");
+}
